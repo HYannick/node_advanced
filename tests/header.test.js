@@ -2,6 +2,7 @@ const Page = require('./helpers/page')
 let page;
 beforeEach(async () => {
   page = await Page.build()
+  console.log('??')
   await page.goto('http://localhost:3000')
 })
 
